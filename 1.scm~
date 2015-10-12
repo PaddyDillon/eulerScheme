@@ -1,0 +1,6 @@
+(define getRange
+  (lambda (n)
+    (if (= n 1)
+        (cons 1 null)
+        (cons n (getRange (- n 1))))))
+(define get
